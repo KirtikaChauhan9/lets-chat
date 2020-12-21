@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kwitter Room</title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=0UX-_HKzSbQDmWfl3yUDjGGLgLc8vtBY4tRI0YGP9QZ7RYtLoOlTplyiqUKdWnf8g1eN4czUaf7NHG1Ghva3lu2kxk39pEwgL6nFCjvvvixplcCQPCWlZAQgdL7zuWym" charset="UTF-8"></script><script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div class="container">
+<button id="logout" onclick="logout()" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+	<center>
+		<h1 class="header">	
+			Lets Chat! !
+			<sup>
+				<img src="m2.png">
+			</sup>
+		</h1>
+		
+		<h3 id="user_name" class="color_white"></h3>
+		<div class="form-group input_div_room_page">
+			<input type="text" id="room_name" class="form-control" placeholder="roomname">
+			<label>#Add Room:</label>
+
+		</div>
+		<button onclick="addroom()" class="btn btn-info">#Add Room</button>
+		<h3 class="color_white">#TRENDING ROOMS</h3>
+	<div id="output">
+	</div>
+	</center>
+</div>
+<script src="kwitter_room.js"></script>
+<script async src="https://drv.tw/inc/wd.js"></script></body>
+</html>
+
